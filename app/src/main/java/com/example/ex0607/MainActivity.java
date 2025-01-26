@@ -31,5 +31,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void go(View view) {
+        shaked1 = ron.nextInt(3) + 1;
+        if (shaked1 == 1) {
+            iv.setImageResource(R.drawable.one);
+            btn.setBackgroundResource(R.drawable.one);
+        } else if (shaked1 == 2) {
+            iv.setImageResource(R.drawable.two);
+            btn.setBackgroundResource(R.drawable.two);
+        } else {
+            iv.setImageResource(R.drawable.three);
+            btn.setBackgroundResource(R.drawable.three);
+        }
     }
 }
